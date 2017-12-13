@@ -6,6 +6,7 @@ class ListNode(object):
         self.next = None
 
 class Solution(object):
+    @logger
     def addTwoNumber(self, l1, l2):
         flag = 0
         Dummy = curr = ListNode(0)
