@@ -6,7 +6,7 @@ class Solution(object):
         matrix[0][0] = 1
         for j in xrange(1, l2):
             if p[j-1] == '*':
-                matrix[j][0] = matrix[j-1][0]
+                matrix[j][0] = matrix[j-2][0] if j >= 2 else matrix[j-1][0]
             else:
                 matrix[j][0] = 0
         for i in xrange(1, l2):
@@ -24,7 +24,8 @@ class Solution(object):
                         matrix[i][j] =matrix[i-2][j]
                 else:
                     matrix[i][j] = 0
-        return matrix[l2-1][l1-1]
+        return True if matrix[l2-1][l1-1] else False
 
 test = Solution()
+
 print test.isMatch("aab", "c*a*b")

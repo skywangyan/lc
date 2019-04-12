@@ -14,11 +14,13 @@ class Solution(object):
             elif char == ']':
                 if not stack or stack.pop() != '[':
                     return False
-            elif char == ')'
+            elif char == ')':
                 if not stack or stack.pop() != '(':
                     return False
         if not stack:
             return True
         else:
             return False
-            
+
+sl = Solution()
+print(sl.isValid('()[]{}') == True)     
