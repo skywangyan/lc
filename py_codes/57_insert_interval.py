@@ -1,3 +1,18 @@
+'''
+Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).
+You may assume that the intervals were initially sorted according to their start times.
+
+Example 1:
+Input: intervals = [[1,3],[6,9]], newInterval = [2,5]
+Output: [[1,5],[6,9]]
+
+Example 2:
+Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]
+Output: [[1,2],[3,10],[12,16]]
+Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
+
+'''
+
 # Definition for an interval.
 class Interval(object):
     def __init__(self, s=0, e=0):
@@ -36,8 +51,30 @@ class Solution(object):
             res.append(newInterval)
         return res
 
+    def insert2(self, intervals, newInterval):
+        res = []
+        merged = False
+        for inv in intervals:
+            if not merged:
+                if inv[0] > newInterval[1] or inv[1] < newInterval[0]:
+                    if inv[0] < newInterval[0]:
+                        res.append(inv)
+                    else:
+                        res.append(newInterval)
+                        res.append(inv)
+                        merged = True
+                else:
+                    res.append([min(inv[0], newInterval[0]), max(inv[1], newInterval[1])])
+                    merged = True
+            else:
+                if not (res[-1][0] > inv[1] or res[-1][1] < inv[0]):
+                    last = res.pop()
+                    res.append([min(last[0], inv[0]), max(last[1], inv[1])])
+                else:
+                    res.append(inv)
+        if not res or not merged:
+            res.append(newInterval)
+        return res
 s = Solution()
-for i in s.insert([Interval(1,3), Interval(6, 9)], Interval(2,5)):
-    print i.start, i.end
-
+print s.insert2([[1,5]], [6,8])
                 
