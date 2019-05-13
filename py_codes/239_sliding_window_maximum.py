@@ -48,5 +48,18 @@ class Solution(object):
                 res[idx] = nums[q[0]]
                 idx += 1
         return res
+    
+    def maxSlidingWindow2(self, nums, k):
+        window = deque()
+        res = []
+        for i in xrange(len(nums)):
+            while window and  window[0] < i - k + 1:
+                window.popleft()
+            while window and nums[window[-1]] < nums[i]:
+                window.pop()
+            window.append(i)
+            if window and i >= k - 1:
+                res.append(nums[window[0]])
+        return res
 s = Solution()
-print s.maxSlidingWindow([7,2,4], 2)
+print s.maxSlidingWindow2([7,2,4], 2)
