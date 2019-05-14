@@ -57,5 +57,35 @@ class Solution(object):
             res.append(dfs(1.0, start, end))
         return res
 
+    def calcEquation2(self, equations, values, queries):
+        graph = defaultdict(dict)
+        for edge, value in zip(equations, values):
+            graph[edge[0]][edge[1]] = value
+            graph[edge[0]][edge[0]] = 1.0
+            graph[edge[1]][edge[0]] = 1 / value
+            graph[edge[1]][edge[1]] = 1.0
+        visited = set()
+
+        def dfs(curr_prod, curr, target):
+            if curr not in graph:
+                return -1.0
+            if target not in graph:
+                return -1.0
+            if curr == target:
+                return 1.0
+            if target in graph[curr]:
+                return curr_prod * graph[curr][target]
+            visited.add(curr)
+            for neighbor in graph[curr]:
+                if neighbor not in visited:
+                    temp = dfs(curr_prod * graph[curr][neighbor], neighbor, target)
+                    if temp != -1.0:
+                        return temp
+            visited.remove(curr)
+            return -1.0
+        res = []
+        for query in queries:
+            res.append(dfs(1.0, query[0], query[1]))
+        return res
 s = Solution()
-print s.calcEquation([ ["a", "b"], ["b", "c"] ], [2.0, 3.0],[ ["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"] ])
+print s.calcEquation2([["x1","x2"],["x2","x3"],["x3","x4"],["x4","x5"]], [3.0,4.0,5.0,6.0],[["x1","x5"],["x5","x2"],["x2","x4"],["x2","x2"],["x2","x9"],["x9","x9"]])
