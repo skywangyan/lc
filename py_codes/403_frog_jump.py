@@ -2,9 +2,13 @@
 # -*- coding: utf-8 -*-
 
 
-# A frog is crossing a river. The river is divided into x units and at each unit there may or may not exist a stone. The frog can jump on a stone, but it must not jump into the water.
-# Given a list of stones' positions (in units) in sorted ascending order, determine if the frog is able to cross the river by landing on the last stone. Initially, the frog is on the first stone and assume the first jump must be 1 unit.
-# If the frog's last jump was k units, then its next jump must be either k - 1, k, or k + 1 units. Note that the frog can only jump in the forward direction.
+# A frog is crossing a river. The river is divided into x units and at each unit there may or may
+#  not exist a stone. The frog can jump on a stone, but it must not jump into the water.
+# Given a list of stones' positions (in units) in sorted ascending order, determine if the frog is 
+# able to cross the river by landing on the last stone. Initially, the frog is on the first stone and 
+# assume the first jump must be 1 unit.
+# If the frog's last jump was k units, then its next jump must be either k - 1, k, or k + 1 units.
+#  Note that the frog can only jump in the forward direction.
 # Note:
 # The number of stones is ≥ 2 and is < 1,100.
 # Each stone's position will be a non-negative integer < 231.
@@ -41,5 +45,17 @@ class Solution(object):
                         dp[unit + nextStep].add(nextStep)
         return True if len(dp[stones[-1]]) != 0 else False
 
+    def canCross2(self, stones):
+        dp = defaultdict(set)
+        dp[0].add(0)
+        dp[1].add(1)
+        for stoneInx in stones[1:]:
+            for lasthop in dp[stoneInx]:
+                for nexthop in [lasthop, lasthop-1, lasthop+1]:
+                    if nexthop > 0 and (stoneInx + nexthop) in stones:
+                        dp[stoneInx+nexthop].add(nexthop) 
+        else:
+            return True if len(dp[stones[-1]]) > 0 else False
+
 s = Solution()
-print s.canCross([0,1,2,3,4,8,9,11])
+print s.canCross2([0,1,2,3,4,8,9,11])
