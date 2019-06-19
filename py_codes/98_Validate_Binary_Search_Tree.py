@@ -31,7 +31,6 @@ class Solution(object):
             res.append(node.val)
             preOrder(node.right)
         preOrder(root)
-        print res
         prev = None
         for i in res:
             if prev is None:
