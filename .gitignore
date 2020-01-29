@@ -2,3 +2,8 @@
 .vscode/*
 .gitignore
 *DS_Store
+javaCodes/.gradle/
+javaCodes/.idea/
+javaCodes/gradlew*
+javaCodes/gradle/wrapper/
+javaCodes/build/
