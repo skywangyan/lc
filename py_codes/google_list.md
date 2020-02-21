@@ -3,7 +3,7 @@
 17 Letter Combinations of a Phone Number 28.6% Medium  
 20 Valid Parentheses 29.3% Easy  
 22 Generate Parentheses 36.9% Medium  
-23 Merge k Sorted Lists 23.3% Hard
+23 Merge k Sorted Lists 23.3% Hard  
 31 Next Permutation 26.5% Medium
 42 Trapping Rain Water 32.2% Hard
 44 Wildcard Matching 17.4% Hard
