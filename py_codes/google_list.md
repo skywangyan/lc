@@ -4,7 +4,7 @@
 20 Valid Parentheses 29.3% Easy  
 22 Generate Parentheses 36.9% Medium  
 23 Merge k Sorted Lists 23.3% Hard  
-31 Next Permutation 26.5% Medium
+31 Next Permutation 26.5% Medium  
 42 Trapping Rain Water 32.2% Hard
 44 Wildcard Matching 17.4% Hard
 50 Pow(x, n) 27.9% Medium
