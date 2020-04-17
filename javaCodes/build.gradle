@@ -2,3 +2,11 @@ plugins {
     id "com.diffplug.gradle.spotless" version "3.27.2"
 }
 apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation('junit:junit:4.13')
+}
