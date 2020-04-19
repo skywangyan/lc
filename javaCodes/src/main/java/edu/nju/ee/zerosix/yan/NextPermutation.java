@@ -1,6 +1,7 @@
 package edu.nju.ee.zerosix.yan;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /*
 Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
@@ -21,9 +22,7 @@ public class NextPermutation implements Solution {
     public void run() {
         int[] input = {1,3,2};
         nextPermutation(input);
-        for(int i: input) {
-            System.out.println(i);
-        }
+        System.out.println("NextPermutation: " + Arrays.toString(input));
 
     }
 

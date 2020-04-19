@@ -8,4 +8,11 @@ public class LeetCodeTest {
         NextPermutation np = new NextPermutation();
         np.run();
     }
+
+
+    @Test()
+    public void TrappingRainWaterTest(){
+        TrappingRainWater trw = new TrappingRainWater();
+        trw.run();
+    }
 }
