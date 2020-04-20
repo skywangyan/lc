@@ -15,4 +15,10 @@ public class LeetCodeTest {
         TrappingRainWater trw = new TrappingRainWater();
         trw.run();
     }
+
+    @Test
+    public void WildcardMatchingTest(){
+        WildcardMatching wm = new WildcardMatching();
+        wm.run();
+    }
 }
