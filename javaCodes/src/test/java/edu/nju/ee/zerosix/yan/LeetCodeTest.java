@@ -21,4 +21,11 @@ public class LeetCodeTest {
         WildcardMatching wm = new WildcardMatching();
         wm.run();
     }
+
+    @Test
+    public void powTest(){
+        Pow p = new Pow();
+        p.run();
+    }
+
 }
