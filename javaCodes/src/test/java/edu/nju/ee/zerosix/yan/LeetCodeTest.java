@@ -28,4 +28,10 @@ public class LeetCodeTest {
         p.run();
     }
 
+    @Test
+    public void spiralMatrix(){
+        SpiralMatrix sm = new SpiralMatrix();
+        sm.run();
+    }
+
 }
