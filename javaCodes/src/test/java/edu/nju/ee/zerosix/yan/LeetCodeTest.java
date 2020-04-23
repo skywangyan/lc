@@ -28,4 +28,10 @@ public class LeetCodeTest {
         p.run();
     }
 
+    @Test
+    public void mergeIntervals(){
+        MergeIntervals mi = new MergeIntervals();
+        mi.run();
+    }
+
 }
