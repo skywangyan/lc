@@ -29,6 +29,12 @@ public class LeetCodeTest {
     }
 
     @Test
+    public void spiralMatrix(){
+        SpiralMatrix sm = new SpiralMatrix();
+        sm.run();
+    }
+
+    @Test
     public void mergeIntervals(){
         MergeIntervals mi = new MergeIntervals();
         mi.run();
