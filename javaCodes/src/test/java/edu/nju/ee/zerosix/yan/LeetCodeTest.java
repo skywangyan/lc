@@ -40,4 +40,9 @@ public class LeetCodeTest {
         mi.run();
     }
 
+    @Test
+    public void insertInterval(){
+        InsertInterval ii = new InsertInterval();
+        ii.run();
+    }
 }

@@ -9,8 +9,8 @@
 44 Wildcard Matching 17.4% Hard  
 50 Pow(x, n) 27.9% Medium  
 54 Spiral Matrix 22.5% Medium  
-56 Merge Intervals 25.3% Hard
-57 Insert Interval 23.8% Hard
+56 Merge Intervals 25.3% Hard  
+57 Insert Interval 23.8% Hard  
 66 Plus One 33.5% Easy
 128 Longest Consecutive Sequence 32.1% Hard
 133 Clone Graph 24.9% Medium
