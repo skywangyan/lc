@@ -45,4 +45,10 @@ public class LeetCodeTest {
         InsertInterval ii = new InsertInterval();
         ii.run();
     }
+
+    @Test
+    public void plusOne(){
+        PlusOne po = new PlusOne();
+        po.run();
+    }
 }
