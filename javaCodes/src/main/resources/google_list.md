@@ -12,7 +12,7 @@
 56 Merge Intervals 25.3% Hard  
 57 Insert Interval 23.8% Hard  
 66 Plus One 33.5% Easy  
-128 Longest Consecutive Sequence 32.1% Hard
+128 Longest Consecutive Sequence 32.1% Hard  
 133 Clone Graph 24.9% Medium
 139 Word Break 25.2% Medium
 140 Word Break II 19.7% Hard

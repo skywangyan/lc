@@ -51,4 +51,10 @@ public class LeetCodeTest {
         PlusOne po = new PlusOne();
         po.run();
     }
+
+    @Test
+    public void longestConsecutiveSequence(){
+        LongestConsecutiveSequence lcs = new LongestConsecutiveSequence();
+        lcs.run();
+    }
 }
