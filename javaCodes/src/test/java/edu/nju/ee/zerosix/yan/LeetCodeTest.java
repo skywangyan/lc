@@ -57,4 +57,10 @@ public class LeetCodeTest {
         LongestConsecutiveSequence lcs = new LongestConsecutiveSequence();
         lcs.run();
     }
+
+    @Test
+    public void cloneGraph(){
+        CloneGraph cg = new CloneGraph();
+        cg.run();
+    }
 }
