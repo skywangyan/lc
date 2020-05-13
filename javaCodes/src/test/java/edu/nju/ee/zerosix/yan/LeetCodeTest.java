@@ -63,4 +63,10 @@ public class LeetCodeTest {
         CloneGraph cg = new CloneGraph();
         cg.run();
     }
+
+    @Test
+    public void wordBreak(){
+        WordBreak wb = new WordBreak();
+        wb.run();
+    }
 }

@@ -1,5 +1,9 @@
 package edu.nju.ee.zerosix.yan;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class LeetCodePros {
     public static void main(String[] args) {
         System.out.println("happy coding Yan!");
