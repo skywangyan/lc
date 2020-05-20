@@ -69,4 +69,10 @@ public class LeetCodeTest {
         WordBreak wb = new WordBreak();
         wb.run();
     }
+
+    @Test
+    public void wordBreakII() {
+        WordBreakII wdii = new WordBreakII();
+        wdii.run();
+    }
 }
