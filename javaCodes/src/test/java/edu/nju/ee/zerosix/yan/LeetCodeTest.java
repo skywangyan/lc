@@ -75,4 +75,10 @@ public class LeetCodeTest {
         WordBreakII wdii = new WordBreakII();
         wdii.run();
     }
+
+    @Test
+    public void LRUCache(){
+        LRUCache cache = new LRUCache(2);
+        cache.run();
+    }
 }
