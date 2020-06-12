@@ -81,4 +81,11 @@ public class LeetCodeTest {
         LRUCache cache = new LRUCache(2);
         cache.run();
     }
+
+    @Test
+    public void minStack() {
+        MinStack ms = new MinStack();
+        ms.run();
+    }
+
 }
