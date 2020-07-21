@@ -88,4 +88,10 @@ public class LeetCodeTest {
         ms.run();
     }
 
+    @Test
+    public void findPeakElement(){
+        FindPeakElement fpe = new FindPeakElement();
+        fpe.run();
+    }
+
 }

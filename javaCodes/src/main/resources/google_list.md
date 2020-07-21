@@ -17,9 +17,9 @@
 139 Word Break 25.2% Medium  
 140 Word Break II 19.7% Hard  
 146 LRU Cache 15.8% Hard  
-155 Min Stack 22.0% Easy
-158 Read N Characters Given Read4 II – Call multiple times 23.4% Hard
-159 Longest Substring with At Most Two Distinct Characters 34.7% Hard
+155 Min Stack 22.0% Easy  
+*158 Read N Characters Given Read4 II – Call multiple times 23.4% Hard*  
+*159 Longest Substring with At Most Two Distinct Characters 34.7% Hard*
 162 Find Peak Element 33.0% Medium
 163 Missing Ranges 29.2% Medium
 166 Fraction to Recurring Decimal 15.1% Medium
