@@ -7,15 +7,16 @@ public class FindPeakElement implements Solution {
     }
 
     public int findPeakElement(int[] nums) {
-        if (nums.length <= 1) return 0;
-        int preDelta = 0;
-        for(int i = 1; i < nums.length; i++) {
-            int currDelta = nums[i] - nums[i-1];
-            if(preDelta > 0 && currDelta < 0){
-                return i - 1;
+        int left = 0;
+        int right = nums.length - 1;
+        while(left < right) {
+            int mid = (left + right) / 2;
+            if (nums[mid] < nums[mid+1]) {
+                left = mid + 1;
+            } else {
+                right = mid;
             }
-            preDelta = currDelta;
         }
-        return -1;
+        return left;
     }
 }
