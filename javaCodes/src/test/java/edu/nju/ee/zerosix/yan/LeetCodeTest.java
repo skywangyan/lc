@@ -94,4 +94,10 @@ public class LeetCodeTest {
         fpe.run();
     }
 
+    @Test
+    public void fractionToRecurringDecimal(){
+        FractionToRecurringDecimal ftrd = new FractionToRecurringDecimal();
+        ftrd.run();
+    }
+
 }
