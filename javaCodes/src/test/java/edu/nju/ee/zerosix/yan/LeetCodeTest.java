@@ -100,4 +100,10 @@ public class LeetCodeTest {
         ftrd.run();
     }
 
+    @Test
+    public void binarySearchTreeIterator(){
+        BinarySearchTreeIterator bstIt = new BinarySearchTreeIterator();
+        bstIt.run();
+    }
+
 }
