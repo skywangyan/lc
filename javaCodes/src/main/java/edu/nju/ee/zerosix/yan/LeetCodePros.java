@@ -7,6 +7,10 @@ import java.util.*;
 @SpringBootApplication
 public class LeetCodePros {
     public static void main(String[] args) {
+        int[][] x = new int[1][2];
         System.out.println("happy coding Yan!");
+        System.out.println(x[0][0] == 0);
     }
+
+
 }

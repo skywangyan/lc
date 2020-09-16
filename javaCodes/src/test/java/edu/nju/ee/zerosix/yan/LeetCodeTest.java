@@ -106,4 +106,15 @@ public class LeetCodeTest {
         bstIt.run();
     }
 
+    @Test
+    public void numberOfIslands() {
+        NumberOfIslands noi = new NumberOfIslands();
+        char[][] input = new char[][]{
+                {'1','1','0','0','0'},
+                {'1','1','0','0','0'},
+                {'0','0','1','0','0'},
+                {'0','0','0','1','1'}
+        };
+        System.out.println(noi.numIslands(input));
+    }
 }
