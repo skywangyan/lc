@@ -18,14 +18,14 @@
 140 Word Break II 19.7% Hard  
 146 LRU Cache 15.8% Hard  
 155 Min Stack 22.0% Easy  
-*158 Read N Characters Given Read4 II – Call multiple times 23.4% Hard*  
-*159 Longest Substring with At Most Two Distinct Characters 34.7% Hard*  
+**158 Read N Characters Given Read4 II – Call multiple times 23.4% Hard**  
+**159 Longest Substring with At Most Two Distinct Characters 34.7% Hard**  
 162 Find Peak Element 33.0% Medium  
-163 Missing Ranges 29.2% Medium  [Locked]
+163 Missing Ranges 29.2% Medium  [Locked]  
 166 Fraction to Recurring Decimal 15.1% Medium  
 173 Binary Search Tree Iterator 34.5% Medium  
 200 Number of Islands 27.6% Medium
-208 Implement Trie (Prefix Tree) 25.3% Medium
+208 Implement Trie (Prefix Tree) 25.3% Medium  
 212 Word Search II 19.3% Hard
 214 Shortest Palindrome 19.7% Hard
 218 The Skyline Problem 22.0% Hard

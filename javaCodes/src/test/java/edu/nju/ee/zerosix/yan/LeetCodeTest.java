@@ -117,4 +117,14 @@ public class LeetCodeTest {
         };
         System.out.println(noi.numIslands(input));
     }
+
+    @Test
+    public void implementTrie(){
+        ImplementTrie it = new ImplementTrie();
+        ImplementTrie.Trie t = it.new Trie();
+        t.insert("hello");
+        assert(t.search("he") == false);
+        assert (t.startsWith("he") == true);
+        assert (t.search("hello") == true);
+    }
 }
