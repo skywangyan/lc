@@ -2,6 +2,8 @@ package edu.nju.ee.zerosix.yan;
 
 import org.junit.Test;
 
+import java.util.List;
+
 public class LeetCodeTest {
     @Test
     public void nextPermutationTest(){
@@ -126,5 +128,20 @@ public class LeetCodeTest {
         assert(t.search("he") == false);
         assert (t.startsWith("he") == true);
         assert (t.search("hello") == true);
+    }
+
+    @Test
+    public void wordSearch2(){
+        WordSearch2 ws2 = new WordSearch2();
+        char[][] board = {
+                {'o','a','a','n'},
+                {'e','t','a','e'},
+                {'i','h','k','r'},
+                {'i','f','l','v'}
+        };
+        String[] words = {"oath","pea","eat","rain"};
+        List<String> ans1 = ws2.findWords(board, words);
+        assert (ans1.size() == 2);
+
     }
 }
