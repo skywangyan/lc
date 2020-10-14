@@ -144,4 +144,10 @@ public class LeetCodeTest {
         assert (ans1.size() == 2);
 
     }
+
+    @Test
+    public void shortestPalindrome(){
+        ShortestPalindrome sp = new ShortestPalindrome();
+        System.out.println(sp.shortestPalindrome(""));
+    }
 }
