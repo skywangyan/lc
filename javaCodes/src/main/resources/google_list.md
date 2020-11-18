@@ -28,7 +28,7 @@
 208 Implement Trie (Prefix Tree) 25.3% Medium   
 212 Word Search II 19.3% Hard  
 214 Shortest Palindrome 19.7% Hard  
-218 The Skyline Problem 22.0% Hard
+218 The Skyline Problem 22.0% Hard  
 224 Basic Calculator 22.1% Hard
 228 Summary Ranges 24.1% Medium
 230 Kth Smallest Element in a BST 37.6% Medium
