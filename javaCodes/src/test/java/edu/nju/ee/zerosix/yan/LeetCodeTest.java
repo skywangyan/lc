@@ -163,4 +163,10 @@ public class LeetCodeTest {
         };
         System.out.println(tsp.getSkyline(builds));
     }
+
+    @Test
+    public void basicCalculator(){
+        BasicCalculator bc = new BasicCalculator();
+        System.out.println(bc.calculate("((3-4)-(1+2))"));
+    }
 }
