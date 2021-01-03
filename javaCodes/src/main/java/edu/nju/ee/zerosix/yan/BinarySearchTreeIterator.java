@@ -35,19 +35,6 @@ You may assume that next() call will always be valid, that is, there will be at
 
 import java.util.Stack;
 
-class TreeNode {
-     int val;
-     TreeNode left;
-     TreeNode right;
-     TreeNode() {}
-     TreeNode(int val) { this.val = val; }
-     TreeNode(int val, TreeNode left, TreeNode right) {
-         this.val = val;
-         this.left = left;
-         this.right = right;
-     }
- }
-
 class BSTIterator {
     Stack<TreeNode> st = new Stack<>();
     public BSTIterator(TreeNode root) {

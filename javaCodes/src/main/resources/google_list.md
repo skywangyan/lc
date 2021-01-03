@@ -1,37 +1,42 @@
-4 Median of Two Sorted Arrays 18.6% Hard  
-10 Regular Expression Matching 22.0% Hard  
-17 Letter Combinations of a Phone Number 28.6% Medium  
-20 Valid Parentheses 29.3% Easy  
-22 Generate Parentheses 36.9% Medium  
-23 Merge k Sorted Lists 23.3% Hard  
-31 Next Permutation 26.5% Medium  
-42 Trapping Rain Water 32.2% Hard  
-44 Wildcard Matching 17.4% Hard  
-50 Pow(x, n) 27.9% Medium  
-54 Spiral Matrix 22.5% Medium  
-56 Merge Intervals 25.3% Hard  
-57 Insert Interval 23.8% Hard  
-66 Plus One 33.5% Easy  
-128 Longest Consecutive Sequence 32.1% Hard  
-133 Clone Graph 24.9% Medium  
-139 Word Break 25.2% Medium  
-140 Word Break II 19.7% Hard  
-146 LRU Cache 15.8% Hard  
-155 Min Stack 22.0% Easy  
-**158 Read N Characters Given Read4 II – Call multiple times 23.4% Hard**  
-**159 Longest Substring with At Most Two Distinct Characters 34.7% Hard**  
-162 Find Peak Element 33.0% Medium  
-163 Missing Ranges 29.2% Medium  [Locked]  
-166 Fraction to Recurring Decimal 15.1% Medium  
-173 Binary Search Tree Iterator 34.5% Medium  
-200 Number of Islands 27.6% Medium  
-208 Implement Trie (Prefix Tree) 25.3% Medium   
-212 Word Search II 19.3% Hard  
-214 Shortest Palindrome 19.7% Hard  
-218 The Skyline Problem 22.0% Hard  
-224 Basic Calculator 22.1% Hard  
-228 Summary Ranges 24.1% Medium  
-230 Kth Smallest Element in a BST 37.6% Medium
+1. 4 Median of Two Sorted Arrays 18.6% Hard  
+1. 10 Regular Expression Matching 22.0% Hard  
+1. 17 Letter Combinations of a Phone Number 28.6% Medium  
+1. 20 Valid Parentheses 29.3% Easy  
+1. 22 Generate Parentheses 36.9% Medium  
+1. 23 Merge k Sorted Lists 23.3% Hard  
+1. 31 Next Permutation 26.5% Medium  
+1. 42 Trapping Rain Water 32.2% Hard  
+1. 44 Wildcard Matching 17.4% Hard  
+1. 50 Pow(x, n) 27.9% Medium  
+1. 54 Spiral Matrix 22.5% Medium  
+1. 56 Merge Intervals 25.3% Hard  
+1. 57 Insert Interval 23.8% Hard  
+1. 66 Plus One 33.5% Easy  
+1. 128 Longest Consecutive Sequence 32.1% Hard  
+1. 133 Clone Graph 24.9% Medium  
+1. 139 Word Break 25.2% Medium  
+1. 140 Word Break II 19.7% Hard  
+1. 146 LRU Cache 15.8% Hard  
+1. 155 Min Stack 22.0% Easy  
+1. **158 Read N Characters Given Read4 II – Call multiple times 23.4% Hard**  
+1. **159 Longest Substring with At Most Two Distinct Characters 34.7% Hard**  
+1. 162 Find Peak Element 33.0% Medium  
+1. 163 Missing Ranges 29.2% Medium  [Locked]  
+1. 166 Fraction to Recurring Decimal 15.1% Medium  
+1. 173 Binary Search Tree Iterator 34.5% Medium  
+1. 200 Number of Islands 27.6% Medium  
+1. 208 Implement Trie (Prefix Tree) 25.3% Medium   
+1. 212 Word Search II 19.3% Hard  
+1. 214 Shortest Palindrome 19.7% Hard  
+1. 218 The Skyline Problem 22.0% Hard  
+1. 224 Basic Calculator 22.1% Hard  
+1. 228 Summary Ranges 24.1% Medium  
+1. 230 Kth Smallest Element in a BST 37.6% Medium
+  - *dfs the binary search tree, put the node into a stack, when there is no more left node, it means
+  there is no more smaller node(the most recent node pushed in the the smallest node), pop the stack, 
+  , then try to find the k-1 th smallest node among the remaining nodes.*
+  
+  
 231 Power of Two 36.4% Easy
 239 Sliding Window Maximum 27.3% Hard
 240 Search a 2D Matrix II 34.4% Medium

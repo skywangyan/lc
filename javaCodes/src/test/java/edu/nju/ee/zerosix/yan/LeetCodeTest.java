@@ -176,4 +176,13 @@ public class LeetCodeTest {
         int[] x = new int[]{-1};
         System.out.println(sr.summaryRanges(x));
     }
+
+    @Test
+    public void kthSmallestElementInBST(){
+        TreeNode root = new TreeNode(5);
+        root.left = new TreeNode(4);
+        root.right = new TreeNode(6);
+        KthSmallestElementInBST kseibst = new KthSmallestElementInBST();
+        System.out.println(kseibst.kthSmallest(root, 1));
+    }
 }
