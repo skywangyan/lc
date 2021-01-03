@@ -169,4 +169,11 @@ public class LeetCodeTest {
         BasicCalculator bc = new BasicCalculator();
         System.out.println(bc.calculate("((3-4)-(1+2))"));
     }
+
+    @Test
+    public void summaryRanges(){
+        SummaryRanges sr = new SummaryRanges();
+        int[] x = new int[]{-1};
+        System.out.println(sr.summaryRanges(x));
+    }
 }

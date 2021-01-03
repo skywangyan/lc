@@ -30,7 +30,7 @@
 214 Shortest Palindrome 19.7% Hard  
 218 The Skyline Problem 22.0% Hard  
 224 Basic Calculator 22.1% Hard  
-228 Summary Ranges 24.1% Medium
+228 Summary Ranges 24.1% Medium  
 230 Kth Smallest Element in a BST 37.6% Medium
 231 Power of Two 36.4% Easy
 239 Sliding Window Maximum 27.3% Hard
