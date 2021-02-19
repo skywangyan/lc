@@ -185,4 +185,10 @@ public class LeetCodeTest {
         KthSmallestElementInBST kseibst = new KthSmallestElementInBST();
         System.out.println(kseibst.kthSmallest(root, 1));
     }
+
+    @Test
+    public void powerOfTwo(){
+        PowerOfTwo pot = new PowerOfTwo();
+        assert(pot.isPowerOfTwo(4) == true);
+    }
 }
