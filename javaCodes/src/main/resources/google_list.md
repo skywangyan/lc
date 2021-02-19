@@ -31,13 +31,19 @@
 1. 218 The Skyline Problem 22.0% Hard  
 1. 224 Basic Calculator 22.1% Hard  
 1. 228 Summary Ranges 24.1% Medium  
-1. 230 Kth Smallest Element in a BST 37.6% Medium
-  - *dfs the binary search tree, put the node into a stack, when there is no more left node, it means
+1. 230 Kth Smallest Element in a BST 37.6% Medium  
+( - *dfs the binary search tree, put the node into a stack, when there is no more left node, it means
   there is no more smaller node(the most recent node pushed in the the smallest node), pop the stack, 
-  , then try to find the k-1 th smallest node among the remaining nodes.*
+  , then try to find the k-1 th smallest node among the remaining nodes.* )
+
+1. Power of Two 36.4% Easy  
+(keep dividing dividend by 2 until either
+    - dividend mod 2 != 0 => false
+    - dividend becomes 1 => true
+    - take care of corner cases)
+
+    
   
-  
-231 Power of Two 36.4% Easy
 239 Sliding Window Maximum 27.3% Hard
 240 Search a 2D Matrix II 34.4% Medium
 246 Strobogrammatic Number 36.3% Easy
